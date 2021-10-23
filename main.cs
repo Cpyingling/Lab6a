@@ -8,18 +8,20 @@ class Program {
   public static void Main (string[] args) {
   //Store in an array called Celsius.
 double[] Celcius = new double[7];
+double[] Fahrenheit = new double[7];
 int i;
     for (i = 0; i < 7; i++) { 
       //Get the average temperature as input in Celsius.
   Console.WriteLine("Enter temperature in Celcius: ");
      Celcius[i] = Convert.ToInt32(Console.ReadLine());
+     Fahrenheit[i] = (Celcius[i] * 9 / 5) + 32; 
     }
       //Store in another array called Fahrenheit.
-double[] Fahrenheit = new double[7];
+/*double[] Fahrenheit = new double[7];
     for (i = 0; i < 7; i++) { 
       //Convert temperature to Fahrenheit.
   Fahrenheit[i] = (Celcius[i] * 9 / 5) + 32; 
-}
+}*/
       //Sort the Fahrenheit array in descending order.
     Array.Sort(Fahrenheit);
     Array.Reverse(Fahrenheit);
